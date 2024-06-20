@@ -1,0 +1,27 @@
+using System;
+namespace ComparisonProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             Console.WriteLine("Введите первое число:");
+             int number1 = Convert.ToInt32(Console.ReadLine()); // Ввод первого числа
+             Console.WriteLine("Введите второе число:");
+             int number2 = Convert.ToInt32(Console.ReadLine()); // Ввод второго числа
+             if (number1 == number2)
+             {
+                 Console.WriteLine("Числа равны");
+             }
+             else if (number1 > number2)
+             {
+                 Console.WriteLine($"Первое число ({number1}) больше второго числа ({number2})");
+             }
+             else
+             {
+                 Console.WriteLine($"Первое число ({number1}) меньше второго числа ({number2})");
+             }
+        }
+    }
+}
+
